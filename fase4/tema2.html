@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="css grid,layout,elementosbasicoscssgrid,elemetos flexibles,ventajas css grid,  desventajas css grid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  
+</head>
+
+<body>
+    <header>
+        <div class="logounad">
+            <img src="img/logoUNAD.png">
+        </div>
+
+    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navigation">
+        <div class="container-fluid">
+            <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;"
+                class="navbar-brand order-2 order-lg-1 mr-auto mr-lg-3 ml-3 ml-lg-0" href="#">Menù </a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="overlay d-flex d-lg-none"></div>
+
+            <div class="order-lg-2 bg-dark d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+                <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 px-lg-2 active" aria-current="page" href="inicio.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 px-lg-2 active dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tema1.html">Tema 1</a></li>
+                            <li><a class="dropdown-item" href="tema2.html">Tema 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 px-lg-2 active dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-expanded="false">
+                            Recursos Digitales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="recurso1.html">Recurso 1</a></li>
+                            <li><a class="dropdown-item" href="recurso2.html">Recurso 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 px-lg-2 active dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-expanded="false">
+                            Actividades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="actividad1.html">Actividad 1</a></li>
+                            <li><a class="dropdown-item" href="actividad2.html">Actividad 2</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link px-3 px-lg-2 active" aria-current="page" href="autor.html">Autor</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <main class="container">
+        <div class="row">
+
+            <section class="col-8">
+                <article>
+                    <h2>CSS Grid</h2>
+                    <p>Es un sistema bidimensional, esto quiere decir que se maneja con filas y columnas, esta es la
+                        principal diferencia con Flexbox, ya que este trabaja con un sistema unidimensional, esto quiere
+                        decir que usar CSS grid amplía nuestras posibilidades de desarrollo, ocupando características
+                        para crear páginas con diseños que hacer un tiempo atrás parecían casi imposibles.<br>
+                        <br>
+                        <img src="img/cssgrid.png" alt="css grid" style="width: 100%;">
+                    <h5> Nota. Adaptado de Introduction to CSS Grid [imagen], Raul Dronca, 2017, Fuente <a
+                            href=" https://images.app.goo.gl/y36eoiRvHZFYLWRb7  ">
+                            https://images.app.goo.gl/y36eoiRvHZFYLWRb7 </a></h5>
+                </article>
+
+                <br>
+                <article>
+                    <h3><b>Elementos básicos de CSS Grid</b></h3>
+
+                    <P>
+                        Contenedor. El elemento padre contenedor que definirá la cuadrícula o rejilla.<br>
+                        <br>ítem. Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).<br>
+                        <br>Celda (grid cell). Cada uno de los cuadros que conforman la cuadrícula, esta sería la unidad
+                        mínima.<br>
+                        <br>Area (grid area). Región o conjunto de celdas de la cuadrícula.<br>
+                        <br>Banda (grid track). Banda horizontal o vertical de celdas de la cuadrícula.<br>
+                        <br>Línea (grid line). Separador horizontal o vertical de las celdas de la cuadrícula.<br>
+                    </P>
+                    <br>
+                    <img  src="img/css grid.jpg" alt="Elementos principales de CSS Grid " style="width: 100%;">
+                    <h5>Nota. Adaptado de Elementos principales del Grid CSS.[imagen], Manz, 2020, Fuente <a
+                            href="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/">https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/</a>
+                    </h5>
+                </article>
+
+                <br>
+                <article>
+                    <h3> <b>Ventajas y desventajas de CSS Grid</b></h3>
+
+                    <p>Las ventajas son las siguientes:<br>
+                        <br>
+                        • La disposición de los elementos es mucho más fácil porque las columnas sirven como pautas para
+                        ubicación. <br>
+                        • Si usa una cuadrícula CSS prediseñada, no es necesario hacer nada de matemáticas para lidiar
+                        con los anchos de columna y medianil. El autor de la cuadrícula ya se ha encargado de ello.<br>
+                        • Podemos compilar más rápido, ya que todo lo que tenemos que hacer es agregar clases
+                        específicas a nuestros contenedores en nuestro HTML y, en su mayor parte, el diseño se realizará
+                        instantáneamente.<br>
+                        • Comprender las cuadrículas en diseño web es relativamente simple, por lo que mejorar / editar
+                        el marcado y el código de otra persona en un proyecto ya construido es menos doloroso que si no
+                        hubieran usado una cuadrícula CSS.
+                        Si la cuadrícula responde o se adapta, no tenemos que preocuparnos demasiado por los puntos de
+                        interrupción. <br>
+                        • Si usamos una cuadrícula CSS de terceros, ya se han resuelto los problemas entre navegadores.
+                        <br>
+                        <br>
+                        Las desventajas son las siguientes: <br>
+                        <br>
+                        • Algunas cuadrículas CSS tienen una curva de aprendizaje más pronunciada que otras. <br>
+                        • Con muchas cuadrículas CSS, estamos atrapados en el uso de las convenciones de nombres que
+                        creó el autor.<br>
+                        • Es posible que tengamos que cambiar / adaptar la forma en que escribimos nuestro HTML. <br>
+                        • Hay tantos CSS cuadrículas para elegir que puede ser abrumador para algunos. <br>
+                        Si nuestro contenido se rompe en ciertos puntos que la cuadrícula no es compatible, tenemos que
+                        dedicar tiempo a modificar la cuadrícula original para que se ajuste a cada situación
+                        individual.
+                        <br>
+                    <h5> Grefa Ajon, C. J., & Aragón Vargas, B. S. (2019). Desarrollo de un sistema web para la gestión
+                        de procesos de la Veterinaria Animal’s VET (Bachelor's thesis, Escuela Superior Politécnica de
+                        Chimborazo). Recuperado de: <a href="http://dspace.espoch.edu.ec/handle/123456789/13651 ">
+                            http://dspace.espoch.edu.ec/handle/123456789/13651 </a></h5>
+
+
+
+                </article>
+
+            </section>
+
+
+            <!--timeline red social-->
+            <aside class="col-4 ">
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                    width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </aside>
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+
+    <!--pie de pagina-->
+    <footer>
+
+        Correo electronico:jgmoraa@unadvirtual.edu.co <br>
+        Skype: Gabriela Mora <br>
+        fecha de actualización:08/05/2021
+
+    </footer>
+
+
+    <!-- main-content -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+        crossorigin="anonymous"></script>
+        <script src="js/swiped-events.js"></script>
+        <script src="js/script.js"></script>
+    
+</body>
+
+</html>

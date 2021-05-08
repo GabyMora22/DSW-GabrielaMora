@@ -1,0 +1,125 @@
+body{
+    
+  background-color: lavender;
+
+}
+.logounad
+{
+    
+  text-align: center;
+
+width: 100%;
+
+}
+.sidebar,
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0px;
+
+}
+
+.sidebar {
+  left: -100%;
+  max-width: 300px;
+  transition: all ease 0.25s;
+  overflow-y: auto;
+  z-index: 1032;
+}
+.overlay {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+  z-index: 1031;
+ 
+}
+
+.main-navigation.active .sidebar {
+  left: 0;
+}
+
+.main-navigation.active .overlay {
+  visibility: visible;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    flex-direction: row;
+    max-width: 100%;
+    transform: none;
+    transition: none;
+    overflow-y: visible;
+    z-index: auto;
+  }
+}
+
+.main-heading {
+  position: relative;
+  z-index: 100;
+}
+.dropdown-menu{
+ background-color: rgba(238, 189, 28, 0.774);
+  text-align: center;
+}
+ 
+footer {  
+	 
+	  background-color:rgb(211, 208, 208);
+	  text-align: center;
+	  color:rgb(7, 61, 97);
+	  font-family: cursive;
+	  font-size: 14px;
+	  padding: 12px 125px;
+}
+  h2{
+ 
+    color: rgb(77, 29, 29);
+    font-family: verdana; 
+    font-weight: bold;
+    font-style: initial;
+    text-align: center;
+    font-size: 20px;
+    margin: 2em;
+   
+    
+  }
+  h3{
+ 
+    color: rgb(12, 9, 9);
+      font-family: verdana; 
+      font-style: initial;
+      font-size: 20px;
+
+      
+   }
+      
+   h5{
+ 
+    color: rgb(12, 9, 9);
+      font-family: 'Times New Roman', Times, serif; 
+      font-style: initial;
+      font-size: 15px;
+ 
+
+      
+   }
+     
+    p{
+    
+    color: rgb(5, 7, 7);
+    font-family: Times New Roman;
+    box-sizing: border-box;
+    text-decoration-style: dashed;
+    text-align: left;
+    justify-content: right;
+    font-size: 20px;
+    
+  }
+     
